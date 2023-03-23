@@ -36,8 +36,11 @@ const Cert2 = () => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">
-            Demo <LaunchIcon />
+          <Button
+            href="https://www.freecodecamp.org/certification/JamieKim/javascript-algorithms-and-data-structures"
+            size="small"
+          >
+            Certificate <LaunchIcon />
           </Button>
         </CardActions>
       </Card>

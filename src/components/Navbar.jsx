@@ -11,7 +11,7 @@ import {
 import React, { useState } from 'react';
 import DrawerComp from './DrawerComp';
 
-const PAGES = ['About', 'Projects', 'Contact'];
+const PAGES = ['Projects', 'About', 'Contact'];
 
 const Navbar = () => {
   const [value, setValue] = useState(null);

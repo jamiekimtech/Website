@@ -35,7 +35,9 @@ const Project1 = () => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Github Code</Button>
+          <Button href="https://github.com/jamiekimtech/Website" size="small">
+            Github Code
+          </Button>
           <Button size="small">
             Demo <LaunchIcon />
           </Button>

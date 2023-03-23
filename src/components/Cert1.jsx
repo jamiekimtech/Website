@@ -37,8 +37,11 @@ const Cert1 = () => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">
-            Demo <LaunchIcon />
+          <Button
+            href="https://www.coursera.org/account/accomplishments/certificate/WUEBFJ9GUJH3"
+            size="small"
+          >
+            Certificate <LaunchIcon />
           </Button>
         </CardActions>
       </Card>

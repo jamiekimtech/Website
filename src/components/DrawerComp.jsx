@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import React, { useState } from 'react';
 
-const PAGES = ['ABOUT', 'PROJECTS', 'CONTACT'];
+const PAGES = ['PROJECTS', 'ABOUT', 'CONTACT'];
 
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);

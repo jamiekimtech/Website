@@ -16,10 +16,15 @@ const About = () => {
         I'm a self-taught software developer who's in love with the creative
         side of programming. <br />
         Proficient in both Korean and English, with experience running a
-        successful business in South Korea.
+        successful business in Seoul, South Korea.
       </h3>
 
-      <Button variant="contained">RESUME</Button>
+      <Button
+        href="https://docs.google.com/document/d/1ShoTcGOUJE_rQVk3BYw0mn4YEoimft6F5aL8UJ5Z3yA/edit?usp=sharing"
+        variant="contained"
+      >
+        RESUME
+      </Button>
     </Box>
   );
 };

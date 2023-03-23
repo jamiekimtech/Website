@@ -38,8 +38,16 @@ const Project2 = () => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Github Code</Button>
-          <Button size="small">
+          <Button
+            href="https://github.com/jamiekimtech/Currency-Ticker-with-Dark-Light-Mode"
+            size="small"
+          >
+            Github Code
+          </Button>
+          <Button
+            href="https://main--singular-salmiakki-a6c94d.netlify.app/"
+            size="small"
+          >
             Demo
             <LaunchIcon />
           </Button>

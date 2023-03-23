@@ -8,7 +8,12 @@ const Intro = () => {
     <Box textAlign={'center'} pt={10}>
       <h1>Jamie Kim</h1>
       <h2>Software Developer</h2>
-      <Button variant="contained">RESUME</Button>
+      <Button
+        href="https://docs.google.com/document/d/1ShoTcGOUJE_rQVk3BYw0mn4YEoimft6F5aL8UJ5Z3yA/edit?usp=sharing"
+        variant="contained"
+      >
+        RESUME
+      </Button>
       <p>
         Web Developer & Graphic Designer <br />
         Based in Detroit, Michigan.
