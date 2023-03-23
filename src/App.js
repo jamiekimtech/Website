@@ -7,7 +7,11 @@ import Navbar from './components/Navbar.jsx';
 
 function App() {
   return (
-    <Stack spacing={10} alignItems="center">
+    <Stack
+      spacing={3}
+      alignItems="center"
+      sx={{ backgroundColor: 'black', color: 'white' }}
+    >
       <Navbar />
       <Intro />
       <Main />

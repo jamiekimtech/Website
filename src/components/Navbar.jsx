@@ -19,7 +19,7 @@ const Navbar = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
   console.log(isMatch);
   return (
-    <AppBar sx={{ background: '#99a89d' }}>
+    <AppBar sx={{ background: 'black' }}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         {isMatch ? (
           <>
