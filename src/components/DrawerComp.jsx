@@ -8,13 +8,18 @@ import {
   ListItemText
 } from '@mui/material';
 import React, { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
-const PAGES = ['PROJECTS', 'ABOUT', 'CONTACT'];
+export const PAGES = [
+  { name: 'PROJECTS', link: '#projects' },
+  { name: 'CERTIFICATES', link: '#certificates' },
+  { name: 'ABOUT', link: '#about' }
+];
 
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
-    <div>
+    <>
       <Drawer
         open={openDrawer}
         onClose={() => {
@@ -25,7 +30,11 @@ const DrawerComp = () => {
           {PAGES.map((page, index) => (
             <ListItemButton key={index}>
               <ListItemIcon>
-                <ListItemText>{page}</ListItemText>
+                <ListItemText>
+                  <HashLink smooth to={page.link}>
+                    {page.name}
+                  </HashLink>
+                </ListItemText>
               </ListItemIcon>
             </ListItemButton>
           ))}
@@ -40,7 +49,7 @@ const DrawerComp = () => {
         {' '}
         <MenuIcon />{' '}
       </IconButton>
-    </div>
+    </>
   );
 };
 

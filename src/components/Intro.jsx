@@ -5,22 +5,25 @@ import React from 'react';
 
 const Intro = () => {
   return (
-    <Box textAlign={'center'} pt={10}>
+    <Box textAlign={'center'} pt={7}>
       <h1>Jamie Kim</h1>
       <h2>Software Developer</h2>
+      <br />
       <Button
         href="https://docs.google.com/document/d/1ShoTcGOUJE_rQVk3BYw0mn4YEoimft6F5aL8UJ5Z3yA/edit?usp=sharing"
         variant="contained"
       >
         RESUME
       </Button>
+      <br />
+      <br />
       <p>
         Web Developer & Graphic Designer <br />
         Based in Detroit, Michigan.
       </p>
-      <MouseIcon />
+      <MouseIcon sx={{ mt: 1 }} />
       <br />
-      <KeyboardDoubleArrowDownIcon />
+      <KeyboardDoubleArrowDownIcon sx={{ mt: -0.5 }} />
     </Box>
   );
 };

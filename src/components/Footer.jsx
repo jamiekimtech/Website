@@ -10,16 +10,19 @@ const Footer = () => {
       sx={{
         textAlign: 'center',
         width: '100%',
-        p: 1,
+        p: 2,
+
         backgroundColor: '#616161'
       }}
     >
-      <h1>Contact</h1>
       <span>
-        <Link href="https://github.com/jamiekimtech">
+        <Link sx={{ color: 'white' }} href="https://github.com/jamiekimtech">
           <GitHubIcon />
         </Link>
-        <Link href="https://www.linkedin.com/in/jamie-kim-6924ba251/">
+        <Link
+          sx={{ color: 'white' }}
+          href="https://www.linkedin.com/in/jamie-kim-6924ba251/"
+        >
           <LinkedInIcon />
         </Link>
       </span>

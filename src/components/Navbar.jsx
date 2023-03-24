@@ -1,7 +1,10 @@
 import HouseboatIcon from '@mui/icons-material/Houseboat';
 import {
   AppBar,
-  Tab,
+  List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
   Tabs,
   Toolbar,
   Typography,
@@ -9,9 +12,10 @@ import {
   useTheme
 } from '@mui/material';
 import React, { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import DrawerComp from './DrawerComp';
 
-const PAGES = ['Projects', 'About', 'Contact'];
+import { PAGES } from './DrawerComp';
 
 const Navbar = () => {
   const [value, setValue] = useState(null);
@@ -46,11 +50,21 @@ const Navbar = () => {
               onChange={(e, value) => {
                 setValue(value);
               }}
-              indicatorColor="secondary"
+              indicatorColor="primary"
             >
-              {PAGES.map((page, index) => (
-                <Tab key={index} label={page} />
-              ))}
+              <List>
+                {PAGES.map((page, index) => (
+                  <ListItemButton key={index}>
+                    <ListItemIcon>
+                      <ListItemText>
+                        <HashLink smooth to={page.link}>
+                          {page.name}
+                        </HashLink>
+                      </ListItemText>
+                    </ListItemIcon>
+                  </ListItemButton>
+                ))}
+              </List>
             </Tabs>
           </>
         )}
