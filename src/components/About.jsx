@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <Box sx={{ textAlign: 'center', maxWidth: 900, p: 4 }}>
+    <Box sx={{ textAlign: 'center', maxWidth: 900, p: 4, lineHeight: 1.5 }}>
       <h1 id="about">About Jamie</h1>
       <Avatar
         alt="about"

@@ -37,11 +37,11 @@ const Cert = () => {
                 bgcolor: 'black',
                 color: 'white',
                 position: 'relative',
-                minHeight: 240,
+                minHeight: 250,
               }}
             >
               <Typography
-                sx={{ lineHeight: 1.2, mt: 0.8 }}
+                sx={{ lineHeight: 1.1, mt: 0.8 }}
                 fontSize={25}
                 variant="h6"
               >
@@ -50,7 +50,7 @@ const Cert = () => {
               <Typography variant="h7">{cert.source}</Typography>
 
               <CardMedia
-                sx={{ height: 150, width: '94%', borderRadius: 2 }}
+                sx={{ height: 150, width: '94%', borderRadius: 2, mt: 1 }}
                 image={cert.image}
               />
             </Card>
