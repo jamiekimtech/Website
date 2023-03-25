@@ -19,7 +19,7 @@ const projects = [
     description: 'Website to showcase projects and certificates.',
     tools: 'Tools: React, MUI, JavaScript, HTML',
     code: 'https://github.com/jamiekimtech/Website',
-    demo: 'https://github.com/jamiekimtech/Website',
+    demo: 'https://jamie-kim-portfolio.vercel.app/',
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const projects = [
     title: 'Currency Ticker',
     image: 'https://i.imgur.com/Zw3JBB4.jpeg',
     description: `Currency ticker(KRW/USD) with an API. A toggle button for dark/light modes.`,
-    tools: 'Tools: JavaScript(ES6 Modules), HTML, CSS',
+    tools: 'Tools: JS(ES6 Modules), HTML, CSS',
     code: 'https://github.com/jamiekimtech/Currency-Ticker-with-Dark-Light-Mode',
     demo: 'https://main--singular-salmiakki-a6c94d.netlify.app/',
   },
@@ -64,7 +64,11 @@ const Project = () => {
                 position: 'relative',
               }}
             >
-              <Typography fontSize={25} variant="h6">
+              <Typography
+                sx={{ lineHeight: 1.2, mt: 0.8 }}
+                fontSize={25}
+                variant="h6"
+              >
                 {project.title}
               </Typography>
               <CardMedia sx={{ height: 150 }} image={project.image} />

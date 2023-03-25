@@ -25,12 +25,7 @@ const certificates = [
 const Cert = () => {
   return (
     <>
-      <Grid
-        container
-        justifyContent="center"
-        alignItems="center"
-        sx={{ maxWidth: 2000 }}
-      >
+      <Grid container justifyContent="center" alignItems="center">
         {certificates.map((cert) => (
           <Grid key={cert.id} xs={12} lg={6}>
             <Card
@@ -45,13 +40,17 @@ const Cert = () => {
                 minHeight: 240,
               }}
             >
-              <Typography fontSize={25} variant="h6">
+              <Typography
+                sx={{ lineHeight: 1.2, mt: 0.8 }}
+                fontSize={25}
+                variant="h6"
+              >
                 {cert.title}
               </Typography>
               <Typography variant="h7">{cert.source}</Typography>
 
               <CardMedia
-                sx={{ height: 150, width: '94%' }}
+                sx={{ height: 150, width: '94%', borderRadius: 2 }}
                 image={cert.image}
               />
             </Card>
