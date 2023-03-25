@@ -4,16 +4,16 @@ import {
   IconButton,
   List,
   ListItemButton,
-  ListItemIcon,
-  ListItemText
+  ListItemText,
 } from '@mui/material';
 import React, { useState } from 'react';
+
 import { HashLink } from 'react-router-hash-link';
 
 export const PAGES = [
   { name: 'PROJECTS', link: '#projects' },
   { name: 'CERTIFICATES', link: '#certificates' },
-  { name: 'ABOUT', link: '#about' }
+  { name: 'ABOUT', link: '#about' },
 ];
 
 const DrawerComp = () => {
@@ -21,21 +21,31 @@ const DrawerComp = () => {
   return (
     <>
       <Drawer
+        anchor="top"
+        disableEnforceFocus
+        ModalProps={{ disableScrollLock: true }}
         open={openDrawer}
         onClose={() => {
           setOpenDrawer(false);
         }}
       >
-        <List>
+        <List sx={{ background: 'black' }}>
           {PAGES.map((page, index) => (
             <ListItemButton key={index}>
-              <ListItemIcon>
-                <ListItemText>
-                  <HashLink smooth to={page.link}>
-                    {page.name}
-                  </HashLink>
-                </ListItemText>
-              </ListItemIcon>
+              <ListItemText>
+                <HashLink
+                  style={{
+                    textDecoration: 'none',
+                    margin: 10,
+                    fontSize: 18,
+                    color: 'white',
+                  }}
+                  smooth
+                  to={page.link}
+                >
+                  {page.name}
+                </HashLink>
+              </ListItemText>
             </ListItemButton>
           ))}
         </List>

@@ -2,14 +2,13 @@ import HouseboatIcon from '@mui/icons-material/Houseboat';
 import {
   AppBar,
   List,
-  ListItemButton,
   ListItemIcon,
   ListItemText,
   Tabs,
   Toolbar,
   Typography,
   useMediaQuery,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
@@ -27,7 +26,13 @@ const Navbar = () => {
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         {isMatch ? (
           <>
-            <Typography sx={{ display: 'flex', fontSize: '1.1rem' }}>
+            <Typography
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                fontSize: '1.4rem',
+              }}
+            >
               JK <HouseboatIcon />
             </Typography>
 
@@ -39,7 +44,7 @@ const Navbar = () => {
               sx={{
                 display: 'flex',
                 fontSize: '1.5rem',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
             >
               JamieKim <HouseboatIcon />
@@ -50,19 +55,32 @@ const Navbar = () => {
               onChange={(e, value) => {
                 setValue(value);
               }}
-              indicatorColor="primary"
             >
               <List>
                 {PAGES.map((page, index) => (
-                  <ListItemButton key={index}>
-                    <ListItemIcon>
-                      <ListItemText>
-                        <HashLink smooth to={page.link}>
-                          {page.name}
-                        </HashLink>
-                      </ListItemText>
-                    </ListItemIcon>
-                  </ListItemButton>
+                  <ListItemIcon>
+                    <ListItemText
+                      sx={{
+                        '&:hover': {
+                          transform: 'scale(1.03)',
+                          transition: '.2s transform ease-out',
+                        },
+                      }}
+                    >
+                      <HashLink
+                        style={{
+                          textDecoration: 'none',
+                          margin: 10,
+                          fontSize: 18,
+                          color: 'white',
+                        }}
+                        smooth
+                        to={page.link}
+                      >
+                        {page.name}
+                      </HashLink>
+                    </ListItemText>
+                  </ListItemIcon>
                 ))}
               </List>
             </Tabs>
