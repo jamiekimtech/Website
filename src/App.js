@@ -5,6 +5,7 @@ import Footer from './components/Footer.jsx';
 import Intro from './components/Intro.jsx';
 import Main from './components/Main.jsx';
 import Navbar from './components/Navbar.jsx';
+import Dancheong from './components/Dancheong.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       >
         <Navbar />
         <Intro />
+        <Dancheong />
         <Main />
         <About />
         <Footer />

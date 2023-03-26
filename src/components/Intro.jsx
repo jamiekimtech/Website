@@ -1,11 +1,35 @@
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import MouseIcon from '@mui/icons-material/Mouse';
 import { Box, Button } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 const Intro = () => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    gsap.fromTo(
+      el.querySelector('.arrow'),
+      {
+        opacity: 0,
+        y: -20,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+      }
+    );
+  }, []);
+
   return (
-    <Box textAlign={'center'} pt={7}>
+    <Box
+      textAlign={'center'}
+      pt={7}
+      ref={ref}
+      sx={{ position: 'relative', zIndex: 2 }}
+    >
       <h1>Jamie Kim</h1>
       <h2>Software Developer</h2>
       <br />
@@ -23,7 +47,7 @@ const Intro = () => {
       </p>
       <MouseIcon sx={{ mt: 1 }} />
       <br />
-      <KeyboardDoubleArrowDownIcon sx={{ mt: -0.5 }} />
+      <KeyboardDoubleArrowDownIcon sx={{ mt: -0.5 }} className="arrow" />
     </Box>
   );
 };
