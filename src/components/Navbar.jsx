@@ -8,13 +8,11 @@ import {
   Toolbar,
   Typography,
   useMediaQuery,
-  useTheme,
+  useTheme
 } from '@mui/material';
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import DrawerComp from './DrawerComp';
-
-import { PAGES } from './DrawerComp';
+import DrawerComp, { PAGES } from './DrawerComp';
 
 const Navbar = () => {
   const [value, setValue] = useState(null);
@@ -30,7 +28,7 @@ const Navbar = () => {
               sx={{
                 display: 'flex',
                 alignItems: 'center',
-                fontSize: '1.4rem',
+                fontSize: '1.4rem'
               }}
             >
               JK <HouseboatIcon />
@@ -44,7 +42,7 @@ const Navbar = () => {
               sx={{
                 display: 'flex',
                 fontSize: '1.5rem',
-                alignItems: 'center',
+                alignItems: 'center'
               }}
             >
               JamieKim <HouseboatIcon />
@@ -63,8 +61,8 @@ const Navbar = () => {
                       sx={{
                         '&:hover': {
                           transform: 'scale(1.03)',
-                          transition: '.2s transform ease-out',
-                        },
+                          transition: '.2s transform ease-out'
+                        }
                       }}
                     >
                       <HashLink
@@ -72,7 +70,7 @@ const Navbar = () => {
                           textDecoration: 'none',
                           margin: 10,
                           fontSize: 18,
-                          color: 'white',
+                          color: 'white'
                         }}
                         smooth
                         to={page.link}

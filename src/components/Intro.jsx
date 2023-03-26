@@ -1,8 +1,8 @@
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import MouseIcon from '@mui/icons-material/Mouse';
 import { Box, Button } from '@mui/material';
-import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import React, { useEffect, useRef } from 'react';
 
 const Intro = () => {
   const ref = useRef(null);
@@ -13,12 +13,12 @@ const Intro = () => {
       el.querySelector('.arrow'),
       {
         opacity: 0,
-        y: -20,
+        y: -20
       },
       {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: 1.1
       }
     );
   }, []);
@@ -45,7 +45,7 @@ const Intro = () => {
         Web Developer & Graphic Designer <br />
         Based in Detroit, Michigan.
       </p>
-      <MouseIcon sx={{ mt: 1, fontSize: '2.5rem' }} />
+      <MouseIcon sx={{ mt: 1.1, fontSize: '2.5rem' }} />
       <br />
       <KeyboardDoubleArrowDownIcon
         sx={{ mt: -0.5, fontSize: '3rem' }}

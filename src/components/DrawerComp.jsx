@@ -4,7 +4,7 @@ import {
   IconButton,
   List,
   ListItemButton,
-  ListItemText,
+  ListItemText
 } from '@mui/material';
 import React, { useState } from 'react';
 
@@ -13,7 +13,7 @@ import { HashLink } from 'react-router-hash-link';
 export const PAGES = [
   { name: 'PROJECTS', link: '#projects' },
   { name: 'CERTIFICATES', link: '#certificates' },
-  { name: 'ABOUT', link: '#about' },
+  { name: 'ABOUT', link: '#about' }
 ];
 
 const DrawerComp = () => {
@@ -38,7 +38,7 @@ const DrawerComp = () => {
                     textDecoration: 'none',
                     margin: 10,
                     fontSize: 18,
-                    color: 'white',
+                    color: 'white'
                   }}
                   smooth
                   to={page.link}

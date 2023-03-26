@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
-import Behind1 from '../images/dc-behind-1.svg';
-import Behind2 from '../images/dc-behind-2.svg';
-import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from 'react';
+import Behind1 from '../images/dc-behind-1.svg';
+import Behind2 from '../images/dc-behind-2.svg';
 
 const Dancheong = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -23,8 +23,8 @@ const Dancheong = () => {
           trigger: element.querySelector('.trigger'),
           start: 'top top',
           end: 40,
-          scrub: true,
-        },
+          scrub: true
+        }
       }
     );
   }, []);
@@ -35,15 +35,15 @@ const Dancheong = () => {
       element.querySelector('#second'),
       { opacity: 1 },
       {
-        scale: 1.1,
-        opacity: 0.7,
-        duration: 1,
+        scale: 1.8,
+        opacity: 0.5,
+
         scrollTrigger: {
           trigger: element.querySelector('.trigger'),
           start: 'top top',
           end: 50,
-          scrub: true,
-        },
+          scrub: true
+        }
       }
     );
   }, []);
@@ -60,7 +60,7 @@ const Dancheong = () => {
           left: -140,
           zIndex: 1,
           filter:
-            'brightness(0) saturate(100%) invert(4%) sepia(4%) saturate(5487%) hue-rotate(164deg) brightness(100%) contrast(92%)',
+            'brightness(0) saturate(100%) invert(4%) sepia(4%) saturate(5487%) hue-rotate(164deg) brightness(100%) contrast(92%)'
         }}
         src={Behind1}
         alt=""
@@ -76,7 +76,7 @@ const Dancheong = () => {
           left: -140,
           zIndex: 0,
           filter:
-            'brightness(0) saturate(100%) invert(5%) sepia(4%) saturate(189%) hue-rotate(314deg) brightness(99%) contrast(92%)',
+            'brightness(0) saturate(100%) invert(5%) sepia(4%) saturate(189%) hue-rotate(314deg) brightness(99%) contrast(92%)'
         }}
         src={Behind2}
         alt=""
