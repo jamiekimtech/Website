@@ -56,7 +56,7 @@ const Dancheong = () => {
           height: 280,
           width: 280,
           position: 'absolute',
-          top: -270,
+          top: -310,
           left: -140,
           zIndex: 1,
           filter:
@@ -72,7 +72,7 @@ const Dancheong = () => {
           height: 280,
           width: 280,
           position: 'absolute',
-          top: -270,
+          top: -300,
           left: -140,
           zIndex: 0,
           filter:

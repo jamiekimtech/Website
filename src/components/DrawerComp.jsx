@@ -51,7 +51,7 @@ const DrawerComp = () => {
         </List>
       </Drawer>
       <IconButton
-        sx={{ color: 'white' }}
+        sx={{ color: '#2196f3' }}
         onClick={() => {
           setOpenDrawer(!openDrawer);
         }}

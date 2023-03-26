@@ -45,9 +45,12 @@ const Intro = () => {
         Web Developer & Graphic Designer <br />
         Based in Detroit, Michigan.
       </p>
-      <MouseIcon sx={{ mt: 1 }} />
+      <MouseIcon sx={{ mt: 1, fontSize: '2.5rem' }} />
       <br />
-      <KeyboardDoubleArrowDownIcon sx={{ mt: -0.5 }} className="arrow" />
+      <KeyboardDoubleArrowDownIcon
+        sx={{ mt: -0.5, fontSize: '3rem' }}
+        className="arrow"
+      />
     </Box>
   );
 };
