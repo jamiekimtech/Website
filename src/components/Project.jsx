@@ -14,8 +14,7 @@ const projects = [
     id: 1,
 
     title: 'Portfolio Website',
-    image:
-      'https://cdn.pixabay.com/photo/2023/03/17/10/44/sunset-7858360_960_720.jpg',
+    image: 'https://i.imgur.com/WclFXl4.jpg',
     description: 'Website to showcase projects and certificates.',
     tools: 'Tools: React, MUI, ScrollTrigger',
     code: 'https://github.com/jamiekimtech/Website',
