@@ -27,7 +27,7 @@ const Cert = () => {
     <>
       <Grid container justifyContent="center" alignItems="center">
         {certificates.map((cert) => (
-          <Grid key={cert.id} xs={12} lg={6}>
+          <Grid key={cert.id} item xs={12} lg={6}>
             <Card
               sx={{
                 maxWidth: { xs: 600, md: 520 },

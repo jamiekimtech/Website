@@ -8,7 +8,7 @@ import {
   Toolbar,
   Typography,
   useMediaQuery,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
@@ -28,7 +28,7 @@ const Navbar = () => {
               sx={{
                 display: 'flex',
                 alignItems: 'center',
-                fontSize: '1.4rem'
+                fontSize: '1.4rem',
               }}
             >
               JK <HouseboatIcon />
@@ -42,13 +42,12 @@ const Navbar = () => {
               sx={{
                 display: 'flex',
                 fontSize: '1.5rem',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
             >
               JamieKim <HouseboatIcon />
             </Typography>{' '}
             <Tabs
-              textColor="inherit"
               value={value}
               onChange={(e, value) => {
                 setValue(value);
@@ -56,13 +55,13 @@ const Navbar = () => {
             >
               <List>
                 {PAGES.map((page, index) => (
-                  <ListItemIcon>
+                  <ListItemIcon key={index}>
                     <ListItemText
                       sx={{
                         '&:hover': {
                           transform: 'scale(1.03)',
-                          transition: '.2s transform ease-out'
-                        }
+                          transition: '.2s transform ease-out',
+                        },
                       }}
                     >
                       <HashLink
@@ -70,7 +69,7 @@ const Navbar = () => {
                           textDecoration: 'none',
                           margin: 10,
                           fontSize: 18,
-                          color: 'white'
+                          color: 'white',
                         }}
                         smooth
                         to={page.link}
