@@ -13,6 +13,7 @@ import {
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import DrawerComp, { PAGES } from './DrawerComp';
+import ScrollIndicator from './ScrollIndicator';
 
 const Navbar = () => {
   const [value, setValue] = useState(null);
@@ -84,6 +85,7 @@ const Navbar = () => {
           </>
         )}
       </Toolbar>
+      <ScrollIndicator />
     </AppBar>
   );
 };
