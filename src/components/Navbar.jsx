@@ -48,15 +48,14 @@ const Navbar = () => {
               JamieKim <HouseboatIcon />
             </Typography>{' '}
             <Tabs
-              textColor="inherit"
-              value={value}
+              value={false}
               onChange={(e, value) => {
                 setValue(value);
               }}
             >
               <List>
                 {PAGES.map((page, index) => (
-                  <ListItemIcon>
+                  <ListItemIcon key={index}>
                     <ListItemText
                       sx={{
                         '&:hover': {

@@ -52,7 +52,7 @@ const Project = () => {
         fontFamily="Bakersville"
       >
         {projects.map((project) => (
-          <Grid key={project.id} xs={12} md={6}>
+          <Grid item key={project.id} xs={12} md={6}>
             <Card
               sx={{
                 maxWidth: { xs: 600, md: 520 },

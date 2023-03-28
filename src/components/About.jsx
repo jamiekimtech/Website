@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
   return (
     <Box sx={{ textAlign: 'center', maxWidth: 900, p: 4, lineHeight: 1.5 }}>
-      <h1>About Jamie</h1>
+      <h1 id="about">About Jamie</h1>
       <Avatar
         alt="about"
         src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg"
