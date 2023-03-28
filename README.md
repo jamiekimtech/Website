@@ -10,7 +10,7 @@ A responsive single page website that showcases my technical projects and certif
 
 - <b>React</b>
 - <b>MUI</b>
-- <b>HTML</b>
+- <b>ScrollTrigger</b>
 
 
 <h2>Environments Used </h2>
