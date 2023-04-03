@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/static/js/main.ae045ea8.js",
+    "static/media/dc-behind-1.svg": "/static/media/dc-behind-1.2c5f1ee5681823b2799084f9de65e03c.svg",
+    "static/media/dc-behind-2.svg": "/static/media/dc-behind-2.1f74a64a2a85c99154a6f8b18858df1c.svg",
+    "index.html": "/index.html",
+    "main.ae045ea8.js.map": "/static/js/main.ae045ea8.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ae045ea8.js"
+  ]
+}
