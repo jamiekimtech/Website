@@ -5,7 +5,7 @@ import {
   CardActions,
   CardMedia,
   Grid,
-  Typography
+  Typography,
 } from '@mui/material';
 import React from 'react';
 
@@ -18,7 +18,7 @@ const projects = [
     description: 'Website to showcase projects and certificates.',
     tools: 'Tools: React, MUI, ScrollTrigger',
     code: 'https://github.com/jamiekimtech/Website',
-    demo: 'https://jamie-kim-portfolio.vercel.app/'
+    demo: 'https://jamie-kim-portfolio.vercel.app/',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projects = [
     description: `Currency ticker(KRW/USD) using an API with a toggle button for dark/light modes.`,
     tools: 'Tools: JS(ES6 Modules), HTML, CSS',
     code: 'https://github.com/jamiekimtech/Currency-Ticker-with-Dark-Light-Mode',
-    demo: 'https://main--singular-salmiakki-a6c94d.netlify.app/'
+    demo: 'https://main--singular-salmiakki-a6c94d.netlify.app/',
   },
   {
     id: 3,
@@ -37,8 +37,8 @@ const projects = [
     image:
       'https://i.pcmag.com/imagery/reviews/01tPXClg2WjLamQzScplH3y-15.fit_scale.size_760x427.v1627670281.png',
     description: `Translate educational materials about programming from English to
-    Korean for a nonprofit organization`
-  }
+    Korean for a nonprofit organization`,
+  },
 ];
 
 const Project = () => {
@@ -60,7 +60,7 @@ const Project = () => {
                 minHeight: { xs: 320, md: 330 },
                 margin: 2,
                 bgcolor: '#d1d1d1',
-                position: 'relative'
+                position: 'relative',
               }}
             >
               <Typography
@@ -74,7 +74,7 @@ const Project = () => {
               <Typography sx={{ width: '90%', lineHeight: 1.4 }}>
                 {project.description}
               </Typography>
-              <Typography>
+              <Typography sx={{ paddingBottom: 6 }}>
                 <b>{project.tools}</b>
               </Typography>
               {project.code && project.demo && (
