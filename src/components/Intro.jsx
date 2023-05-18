@@ -34,7 +34,7 @@ const Intro = () => {
       <h2>Software Developer</h2>
       <br />
       <Button
-        href="https://docs.google.com/document/d/1ShoTcGOUJE_rQVk3BYw0mn4YEoimft6F5aL8UJ5Z3yA/edit?usp=sharing"
+        href="https://www.overleaf.com/project/64655459bb7c2f7a5b96d806"
         variant="contained"
       >
         RESUME
