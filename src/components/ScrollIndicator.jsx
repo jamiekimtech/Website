@@ -15,8 +15,10 @@ const ScrollIndicator = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', onScroll);
+
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
   return (
     <div className="indicatorWrapper" style={{ height: '4.5px' }}>
       <div
@@ -24,7 +26,7 @@ const ScrollIndicator = () => {
         style={{
           height: '4.5px',
           width: `${scrollTop}%`,
-          backgroundColor: '#2196f3'
+          backgroundColor: '#2196f3',
         }}
       ></div>
     </div>
