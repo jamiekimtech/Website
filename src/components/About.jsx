@@ -20,7 +20,7 @@ const About = () => {
       </h4>
       <br />
       <Button
-        href="https://docs.google.com/document/d/1ShoTcGOUJE_rQVk3BYw0mn4YEoimft6F5aL8UJ5Z3yA/edit?usp=sharing"
+        href="https://www.overleaf.com/read/ndnsmwyprbjr"
         variant="contained"
       >
         RESUME
