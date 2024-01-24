@@ -12,6 +12,25 @@ const projects = [
   {
     id: 1,
 
+    title: 'IZT Company Website',
+    image: 'https://i.imgur.com/DcSERk0.png',
+    description:
+      'A responsive company website in collaboration with an in-house graphic designer.',
+    tools: 'Tools: Sveltekit, Docker, Webflow',
+    url: 'https://izt.one/',
+  },
+  {
+    id: 2,
+
+    title: 'Product Showcasing Website',
+    image: 'https://i.imgur.com/IkxuW4v.png',
+    description: `A dynamic product showcasing a customer management system named Manage.`,
+    tools: 'Tools: Sveltekit, Docker, Tailwind CSS',
+    url: 'https://manage.izt.app/',
+  },
+  {
+    id: 3,
+
     title: 'Portfolio Website',
     image: 'https://i.imgur.com/WclFXl4.jpg',
     description: 'Website to showcase projects and certificates.',
@@ -20,7 +39,7 @@ const projects = [
     demo: 'https://jamie-kim-portfolio.vercel.app/',
   },
   {
-    id: 2,
+    id: 4,
 
     title: 'Currency Ticker',
     image: 'https://i.imgur.com/Zw3JBB4.jpeg',
@@ -30,7 +49,7 @@ const projects = [
     demo: 'https://main--singular-salmiakki-a6c94d.netlify.app/',
   },
   {
-    id: 3,
+    id: 5,
 
     title: 'Volunteer/freeCodeCamp Translator',
     image:
@@ -93,6 +112,18 @@ const Project = () => {
                     size="small"
                   >
                     Demo <LaunchIcon fontSize="xs" />
+                  </Button>
+                </CardActions>
+              )}
+              {project.url && (
+                <CardActions sx={{ position: 'absolute', bottom: 5, right: 3 }}>
+                  <Button
+                    sx={{ bgcolor: 'black' }}
+                    variant="contained"
+                    href={project.url}
+                    size="small"
+                  >
+                    Visit Website <LaunchIcon fontSize="xs" />
                   </Button>
                 </CardActions>
               )}

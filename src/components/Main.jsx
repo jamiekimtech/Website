@@ -3,11 +3,12 @@ import React from 'react';
 import Cert from './Cert';
 
 import Project from './Project';
+import Experience from './Experience';
 
 const theme = createTheme({
   typography: {
-    fontFamily: ['Roboto Slab', 'serif'].join(',')
-  }
+    fontFamily: ['Roboto Slab', 'serif'].join(','),
+  },
 });
 
 const Main = () => {
@@ -20,9 +21,16 @@ const Main = () => {
         paddingTop={1}
         sx={{
           background:
-            'linear-gradient(360deg, rgba(0,0,0,0) 0%, rgba(33,33,33,1) 14%, rgba(33,33,33,1) 88%, rgba(0,0,0,0) 100%)'
+            'linear-gradient(360deg, rgba(0,0,0,0) 0%, rgba(33,33,33,1) 14%, rgba(33,33,33,1) 88%, rgba(0,0,0,0) 100%)',
         }}
       >
+        <Box mt={2}>
+          <h1 id="projects">/ Experience</h1>
+          <br />
+          <Experience />
+          <br />
+          <br />
+        </Box>
         <Box mt={2}>
           <h1 id="projects">/ Projects</h1>
           <br />

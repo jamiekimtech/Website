@@ -5,20 +5,22 @@ import { gsap } from 'gsap';
 import React, { useEffect, useRef } from 'react';
 
 const Intro = () => {
+  // Create a reference to the Box component
   const ref = useRef(null);
 
+  // Run the animation when the component mounts
   useEffect(() => {
     const el = ref.current;
     gsap.fromTo(
       el.querySelector('.arrow'),
       {
         opacity: 0,
-        y: -20
+        y: -20,
       },
       {
         opacity: 1,
         y: 0,
-        duration: 1.1
+        duration: 1.1,
       }
     );
   }, []);
@@ -42,7 +44,7 @@ const Intro = () => {
       <br />
       <br />
       <p>
-        Web Developer & Graphic Designer <br />
+        Front-end Developer & Graphic Designer <br />
         Based in Detroit, Michigan.
       </p>
       <MouseIcon sx={{ mt: 1.1, fontSize: '2.5rem' }} />

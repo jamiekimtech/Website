@@ -12,7 +12,7 @@ const Footer = () => {
         width: '100%',
         p: 2,
 
-        backgroundColor: '#616161'
+        backgroundColor: '#616161',
       }}
     >
       <span>

@@ -2,7 +2,7 @@ import { Stack } from '@mui/system';
 import { BrowserRouter } from 'react-router-dom';
 import About from './components/About.jsx';
 import Dancheong from './components/Dancheong.jsx';
-import EmailForm from './components/EmailForm.jsx';
+import Experience from './components/Experience.jsx';
 import Footer from './components/Footer.jsx';
 import Intro from './components/Intro.jsx';
 import Main from './components/Main.jsx';
@@ -21,7 +21,7 @@ function App() {
         <Dancheong />
         <Main />
 
-        <EmailForm />
+        <Experience />
         <About />
         <Footer />
       </Stack>

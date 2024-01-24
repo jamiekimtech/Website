@@ -6,7 +6,7 @@ const About = () => {
       <h1 id="about">About Jamie</h1>
       <Avatar
         alt="about"
-        src="https://avatars.githubusercontent.com/u/114262745?v=4"
+        src="https://media.licdn.com/dms/image/D5603AQEVnnYhr24RhQ/profile-displayphoto-shrink_200_200/0/1684348809397?e=1711584000&v=beta&t=XK_2rLLmRdUgTzlCy_7G9qyysCzLOW-tU1j_bMl4wl8"
         sx={{ width: '40%', height: '40%', margin: 'auto', mt: 3 }}
       />
       <br />
