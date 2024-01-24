@@ -11,9 +11,8 @@ import {
 const projects = [
   {
     id: 1,
-
     title: 'IZT Company Website',
-    image: 'https://i.imgur.com/DcSERk0.png',
+    image: 'https://i.imgur.com/IkxuW4v.png',
     description:
       'A responsive company website in collaboration with an in-house graphic designer.',
     tools: 'Tools: Sveltekit, Docker, Webflow',
@@ -21,9 +20,8 @@ const projects = [
   },
   {
     id: 2,
-
     title: 'Product Showcasing Website',
-    image: 'https://i.imgur.com/IkxuW4v.png',
+    image: 'https://i.imgur.com/DcSERk0.png',
     description: `A dynamic product showcasing a customer management system named Manage.`,
     tools: 'Tools: Sveltekit, Docker, Tailwind CSS',
     url: 'https://manage.izt.app/',
