@@ -20,8 +20,6 @@ function App() {
         <Intro />
         <Dancheong />
         <Main />
-
-        <Experience />
         <About />
         <Footer />
       </Stack>

@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Button,
-  Card,
-  CardActions,
-  CardMedia,
-  Grid,
-  Typography,
-} from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 
 const Experience = () => {
   return (
