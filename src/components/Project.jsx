@@ -24,7 +24,6 @@ const projects = [
     image: 'https://i.imgur.com/DcSERk0.png',
     description: `A dynamic product showcasing a customer management system named Manage.`,
     tools: 'Tools: Sveltekit, Docker, Tailwind CSS',
-    url: 'https://manage.izt.app/',
   },
   {
     id: 3,
